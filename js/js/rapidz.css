@@ -1,0 +1,397 @@
+*{
+    -webkit - box - sizing: border - box; - moz - box - sizing: border - box;box - sizing: border - box
+}
+html, body {
+    margin: 0;padding: 0;color: #222;font-size:16px;font-family:Arial,Verdana,Helvetica,sans-serif;border-style:none;min-height:100%}# header {
+        background: #f0f0d0;padding: 10 px 20 px 7 px;height: 55 px;width: 100 % ;z - index: 100
+    }
+    body {
+        line - height: unset!important
+    }
+    #header p,
+    #header a {
+        line - height: 1;
+        font - size: x - large;
+        font - weight: 700;
+        text - decoration: none;
+        color: #664}# header a: hover {
+            color: #d60
+        }
+        #header > div {
+            width: 980 px;margin: 0 auto;padding: 0
+        }
+        #header > div > div > p {
+            margin: 0
+        }
+        #header > div > div > p > a: nth - child(2) {
+            margin - right: 0
+        }.box {
+            display: inline - block;vertical - align: middle;margin: 5 px
+        }
+        @media only screen and(max - width: 799 px) {
+            #header {
+                height: auto;padding: 8 px 20 px
+            }
+            #header a {
+                font - size: large
+            }
+            #header > div {
+                max - width: 100 % ;
+                width: auto;
+                padding: 0
+            }
+        }
+        #wrapper {
+            max - width: 1000 px;
+            margin: 0 auto;
+            border - width: 0;
+            padding: 0 5 px 20 px
+        }
+        #nav {
+            color: #000;clear:left;line-height:2;font-size:small;margin:8px 0 0;padding:6px 0;border-bottom:1px # ddd solid
+        }
+        #nav a {
+            line - height: 2;
+            padding: 11 px 4 px;
+            color: #000;text-decoration:none}# nav a: first - child {
+                padding - left: 0;
+                padding - right: 7 px
+            }
+            #nav a: hover {
+                background: #f0f0d0
+            }
+            #lcol {
+                display: inline - block;vertical - align: top;width: 650 px;padding - right: 10 px
+            }
+            #doc {
+                padding: 0;padding - right: 20 px;margin - left: 0
+            }
+            #rcol {
+                padding: 20 px 0 10 px;display: inline - block;vertical - align: top;width: 300 px
+            }
+            #share {
+                margin - top: 20 px
+            }
+            #share > a > img {
+                width: 40 px;height: 40 px;margin - right: 5 px
+            }
+            #fdbk form * {
+                display: block
+            }
+            #fdbk textarea {
+                max - width: 500 px;
+                width: 100 % ;
+                font - size: 15 px
+            }
+            #fdbk textarea: invalid, #fdbk textarea: focus: invalid {
+                border - color: #cc8080
+            }
+            #fdbk.btn {
+                width: fit - content;text - decoration: none;color: #fff;border: #6c757d;background:# 6 c757d;border - radius: .25 rem;font - size: 1 rem;padding: .375 rem .75 rem;line - height: 1.5;margin - top: 10 px
+            }
+            #fdbk.btn: hover {
+                    background: #5a6268}# fdbk #msg {
+                        display: none
+                    }
+                    #top - ad {
+                        display: none;max - width: 100 % ;width: 728 px;margin: 20 px auto 10 px
+                    }
+                    #ban - ad {
+                        display: none;margin: 40 px 0 20 px
+                    }.adslot_1 {
+                        display: none;width: 728 px;height: 90 px
+                    }.adslot_2 {
+                        display: inline - block;width: 300 px;height: 250 px;height: 600 px;margin: 30 px 0
+                    }.adslot_3 {
+                        display: inline - block;width: 100 % ;max - width: 650 px;height: 90 px
+                    }
+                    @media only screen and(max - width: 799 px) {
+                        #nav {
+                            margin - top: 0
+                        }
+                        #lcol {
+                            width: 100 % ;padding - right: 0
+                        }
+                        #doc {
+                            padding - right: 0
+                        }
+                        #rcol {
+                            margin - left: 0;
+                            width: 100 % ;
+                            padding: 20 px 0
+                        }
+                        #ban - ad {
+                            margin: 30 px auto;width: 300 px
+                        }.adslot_2 {
+                            display: none
+                        }.adslot_3 {
+                            width: 300 px;height: 250 px;margin: auto
+                        }
+                    }
+                    @media only screen and(max - width: 799 px) and(orientation: portrait) {
+                        #ban - ad {
+                            display: none
+                        }.adslot_1 {
+                            max - width: 100 % ;
+                            height: 100 px
+                        }
+                    }
+                    @media only screen and(max - width: 799 px) and(orientation: landscape) {
+                        .adslot_1 {
+                            max - width: 320 px;
+                            height: 50 px
+                        }
+                    }
+                    @media only screen and(max - width: 320 px) and(orientation: portrait) {
+                        .adslot_3 {
+                            margin - left: -10 px
+                        }
+                    }
+                    #footer {
+                        padding: 30 px;clear: both;text - align: center;line - height: 200 % ;border - top: 1 px solid #eee;background: #f8f8f8
+                    }
+                    #footer a {
+                        padding: 8 px 5 px;text - decoration: none;color: #333}# footer a: hover {
+                            color: #000;background:# e8e8c8
+                        }
+                        #wrapper p,
+                        body h1,
+                        body h2,
+                        body h3,
+                        body h4,
+                        body h5 {
+                            line - height: 1.8
+                        }
+                        #wrapper a {
+                            line - height: 2
+                        }
+                        #wrapper p {
+                            margin - top: 2 px;
+                            margin - bottom: 2 px
+                        }
+                        #wrapper table {
+                            margin - bottom: 5 px
+                        }
+                        #wrapper th {
+                            background: #e0e0e0;font - style: normal
+                        }
+                        #wrapper td {
+                            padding - right: 5 px;
+                            padding - left: 5 px
+                        }
+                        #wrapper ul,
+                        ul ul {
+                            font - size: 1 em;
+                            list - style - position: outside
+                        }
+                        #wrapper li {
+                            margin - top: 2 px
+                        }
+                        #rcol li {
+                            margin - left: -11 px
+                        }
+                        #wrapper h1,
+                        h2,
+                        h3 {
+                            font - weight: 400
+                        }
+                        h1 {
+                            margin - bottom: 4 px;
+                            padding - bottom: 0;
+                            color: #333}h1{font-size:1.8em;margin-top:0}h2{font-size:1.4em;letter-spacing:0;margin-top:10px;margin-bottom:3px}h3{font-size:1.4em;letter-spacing:0;margin-top:10px;margin-bottom:3px}h4{font-size:1.1em;margin-top:5px;margin-bottom:2px;font-weight:700}h5{font-size:.9em;margin-top:5px;margin-bottom:2px;font-weight:700}h6{font-size:1.1em;color:# 333;
+                            font - weight: 400;
+                            font - style: italic;
+                            margin - top: 3 px;
+                            margin - bottom: 0
+                        }
+                        #rcol h5 {
+                            font - size: .9 em;
+                            font - weight: 700;
+                            margin - top: 5 px;
+                            margin - bottom: 2 px;
+                            background: #e0e0e0;
+                            padding: 5 px 5 px 5 px 10 px
+                        }
+                        input {
+                            font - size: 1 em
+                        }
+                        @media only screen and(max - width: 799 px) {
+                            .btn {
+                                font - size: 1.2 em;
+                                padding: 7 px
+                            }
+                        }
+                        @media only screen and(min - width: 800 px) {
+                            .btn {
+                                font - size: 1.2 em;
+                                padding: 4 px
+                            }
+                        }.intext {
+                            background: #fff;padding - left: 3 px;border: 1 px inset #eee
+                        }.outtext {
+                            background: #e0f0e0;padding - left: 3 px;border: 1 px solid #ccc
+                        }
+                        a: link {
+                            text - decoration: none;
+                            color: #083d8d}a:visited{text-decoration:none;color:# 083 d8d
+                        }
+                        a: active {
+                            text - decoration: underline;
+                            color: #000}a:hover{text-decoration:underline;color:# 000
+                        }
+                        a: focus {
+                            outline: none
+                        }.math {
+                            font - family: times new roman;
+                            font - size: 1.6 em;
+                            padding - left: 6 px;
+                            font - weight: 400
+                        }.mathsymbol {
+                            font - family: times new roman;
+                            font - size: 1.2 em;
+                            font - weight: 400
+                        }.text {
+                            font - family: times new roman, Times, serif;
+                            font - size: 1.2 em
+                        }.code {
+                            font - family: courier new;
+                            font - size: 1 em;
+                            padding - left: 6 px
+                        }.codebg {
+                            font - family: courier new;
+                            font - size: 1 em;
+                            color: #000;background:# f0f0f0;
+                            margin - top: 0;
+                            margin - bottom: 0;
+                            padding: 10 px
+                        }.codebg.p {
+                            font - family: courier new;
+                            font - size: 1 em;
+                            color: #000;background:# f0f0f0;
+                            margin - top: 0;
+                            margin - bottom: 0
+                        }
+                        p.code {
+                            font - family: courier new;
+                            font - size: 1 em;
+                            color: #000;background:# f0f0f0;
+                            margin: 0;
+                            padding: 5 px;
+                            border - width: 1 px;
+                            border - color: #ccc;
+                            border - style: solid;
+                            line - height: 20 px
+                        }
+                        p.wcode {
+                            font - family: courier new;
+                            font - size: 1 em;
+                            color: #000}p.tcode{font-family:courier new;font-size:1em;color:# 000;
+                            background: #f0f0f0;
+                            margin: 0;
+                            padding: 5 px;
+                            border - width: 1 px;
+                            border - color: #ccc;
+                            border - style: solid;
+                            line - height: 20 px
+                        }.table1.hov {
+                            border: 2 px #000 solid;padding:4px}.table1 .ho2{border:2px # 707070 solid;padding: 4 px
+                        }.table1.td {
+                            border: 1 px #000 solid;padding:5px}table.dtable,table.ntable{border:1px # ccc solid;border - collapse: collapse;padding: 5 px
+                        }
+                        table.dtable th,
+                        table.dtable td,
+                        table.ntable th,
+                        table.ntable td {
+                            border: 1 px #ccc solid;border - collapse: collapse;padding: 5 px;font - weight: 400
+                        }
+                        table.dtable th,
+                        table.ntable th {
+                            text - align: center
+                        }
+                        table.ntable td {
+                            text - align: right
+                        }.calc,
+                        .calc2 {
+                            border - spacing: 0;
+                            border - collapse: separate;
+                            background: #e8e8e8;
+                            border: 1 px #ddd solid; - moz - border - radius: 7 px; - webkit - border - radius: 7 px;
+                            border - radius: 7 px
+                        }
+                        table.calc td,
+                        .calc2 td {
+                            padding: 2 px;border - width: 0;border - style: none;background: #e8e8e8
+                        }.calc2 select {
+                            padding: 4 px 2 px;font - size: 1.2 em;font - family: Arial,
+                            Helvetica,
+                            sans - serif
+                        }
+                        @media only screen and(max - width: 576 px) {
+                            .calc2 {
+                                padding: 8 px;margin - left: auto;margin - right: auto
+                            }.calc2 td {
+                                float: left
+                            }.calc2 td: nth - child(2) {
+                                clear: left
+                            }.calc2 tr td: nth - child(3) {
+                                padding - top: 10 px
+                            }.calc2 input[type = text], .calc2 input[type = number], .calc2 input[type = url] {
+                                width: 190 px;font - size: x - large;padding - left: 3 px
+                            }.calc2 tr td: nth - child(3) select {
+                                margin - top: -8 px
+                            }
+                        }
+                        @media only screen and(min - width: 577 px) {
+                            .calc2 {
+                                padding: 15 px
+                            }.calc2 tr {
+                                line - height: 40 px
+                            }.calc2 input[type = text], .calc2 input[type = number], .calc2 input[type = url] {
+                                width: 220 px;font - size: x - large;padding - left: 3 px
+                            }
+                        }
+                        #banner {
+                            display: none;border - top: 1 px #eee solid;font - size: 14 px;position: fixed;z - index: 9999;left: 0;right: 0;bottom: 0;padding: 1 em 1.8 em;color: #333;background:# f8f8f8
+                        }
+                        #banner div {
+                            vertical - align: middle;
+                            display: inline - block;
+                            min - width: 300 px
+                        }
+                        #banner div: last - child {
+                            min - width: 320 px;
+                            line - height: 40 px
+                        }
+                        #banner a {
+                            cursor: pointer;text - decoration: none
+                        }
+                        #bansetbtn {
+                            padding: 12 px 10 px;margin - left: 20 px;color: #333;border:1px # ccc solid;white - space: nowrap
+                        }
+                        #banokbtn {
+                            padding: 12 px 50 px;margin - left: 20 px;background: #8ec760;color:# fff;font - weight: 700
+                        }
+                        #bansetbtn: hover {
+                            background: #e8e8e8
+                        }
+                        #banokbtn: hover {
+                                background: #7eb750}@media all and (max-width:1000px){# banner div: last - child {
+                                    margin - top: 10 px
+                                }
+                                #banokbtn {
+                                    margin - left: 0
+                                }
+                            }.seealso {
+                                list - style: none;
+                                white - space: nowrap;
+                                display: flex;
+                                flex - wrap: wrap;
+                                padding: 0 10 px 20 px;
+                                background: #f0f0e0
+                            }.seealso li {
+                                margin - top: 20 px!important;
+                                margin - right: 10 px
+                            }.seealso li a {
+                                padding: .5 rem .75 rem;color: #fff;background: #6c757d;border:1px solid# 6 c757d;font - size: 1 rem;border - radius: .25 rem;text - decoration: none;vertical - align: middle
+                            }.seealso li a: hover {
+                                background: #5a6268}
