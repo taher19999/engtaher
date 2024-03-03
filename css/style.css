@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.section1{background-color:chartreuse;} 
+.section2{background-color:yellow;} 
+.section3{background-color:cyan;} 
+.section4{background-color:tomato;} 
+
+.toTop{
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    background-color: white	;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .5s;
+}
+.active_toTop{
+    opacity: 1;
+    pointer-events: auto;
+    bottom: 15px;
+}
