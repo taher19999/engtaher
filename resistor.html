@@ -1,0 +1,551 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<title>حساب كود الون مقاومة </title>
+<meta name="description" content="Resistor Color Code Calculator determines and calculates the resistance values for 3 band, 4 band, 5 band and 6 band color code resistors. Moreover, this tool decodes the tolerance and temperature coefficient of resistance from the color chart." />
+<link rel="canonical" href="https://www.codrey.com/tools/resistor-color-code-calculator/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Resistor Color Code Calculator (3-band, 4-band, 5-band and 6-band) - Codrey Electronics" />
+<meta property="og:description" content="Resistor Color Code Calculator determines and calculates the resistance values for 3 band, 4 band, 5 band and 6 band color code resistors. Moreover, this tool decodes the tolerance and temperature coefficient of resistance from the color chart." />
+<meta property="og:url" content="https://www.codrey.com/tools/resistor-color-code-calculator/" />
+<meta property="og:site_name" content="Codrey Electronics" />
+<meta property="article:publisher" content="https://www.facebook.com/CodreyElectronics" />
+<meta property="article:published_time" content="2020-07-22T02:11:51+00:00" />
+<meta property="article:modified_time" content="2020-07-23T16:02:29+00:00" />
+<meta property="og:image" content="https://www.codrey.com/wp-content/uploads/2020/07/Resistor-Color-Code-Calculator.png" />
+<meta property="og:image:width" content="675" />
+<meta property="og:image:height" content="351" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:creator" content="@CodreyE" />
+<meta name="twitter:site" content="@CodreyE" />
+<meta name="twitter:label1" content="Written by" />
+<meta name="twitter:data1" content="Siddharth Kumar" />
+<link rel="icon" href="img/Picture2.ico">
+<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.codrey.com/#organization","name":"Codrey Electronics","url":"https://www.codrey.com/","sameAs":["https://www.facebook.com/CodreyElectronics","https://www.pinterest.com/CodreyElectronics","https://twitter.com/CodreyE"],"logo":{"@type":"ImageObject","@id":"https://www.codrey.com/#logo","inLanguage":"en-US","url":"https://www.codrey.com/wp-content/uploads/2020/05/Codrey-Electronics-Logo.png","contentUrl":"https://www.codrey.com/wp-content/uploads/2020/05/Codrey-Electronics-Logo.png","width":190,"height":50,"caption":"Codrey Electronics"},"image":{"@id":"https://www.codrey.com/#logo"}},{"@type":"WebSite","@id":"https://www.codrey.com/#website","url":"https://www.codrey.com/","name":"Codrey Electronics","description":"Electronics and Embedded Systems","publisher":{"@id":"https://www.codrey.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.codrey.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://www.codrey.com/tools/resistor-color-code-calculator/#primaryimage","inLanguage":"en-US","url":"https://www.codrey.com/wp-content/uploads/2020/07/Resistor-Color-Code-Calculator.png","contentUrl":"https://www.codrey.com/wp-content/uploads/2020/07/Resistor-Color-Code-Calculator.png","width":675,"height":351,"caption":"Resistor Color Code Calculator"},{"@type":"WebPage","@id":"https://www.codrey.com/tools/resistor-color-code-calculator/#webpage","url":"https://www.codrey.com/tools/resistor-color-code-calculator/","name":"Resistor Color Code Calculator (3-band, 4-band, 5-band and 6-band) - Codrey Electronics","isPartOf":{"@id":"https://www.codrey.com/#website"},"primaryImageOfPage":{"@id":"https://www.codrey.com/tools/resistor-color-code-calculator/#primaryimage"},"datePublished":"2020-07-22T02:11:51+00:00","dateModified":"2020-07-23T16:02:29+00:00","description":"Resistor Color Code Calculator determines and calculates the resistance values for 3 band, 4 band, 5 band and 6 band color code resistors. Moreover, this tool decodes the tolerance and temperature coefficient of resistance from the color chart.","breadcrumb":{"@id":"https://www.codrey.com/tools/resistor-color-code-calculator/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.codrey.com/tools/resistor-color-code-calculator/"]}]},{"@type":"BreadcrumbList","@id":"https://www.codrey.com/tools/resistor-color-code-calculator/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.codrey.com/"},{"@type":"ListItem","position":2,"name":"Electrical Engineering Calculators","item":"https://www.codrey.com/tools/"},{"@type":"ListItem","position":3,"name":"Resistor Color Code Calculator"}]},{"@type":"Article","@id":"https://www.codrey.com/tools/resistor-color-code-calculator/#article","isPartOf":{"@id":"https://www.codrey.com/tools/resistor-color-code-calculator/#webpage"},"author":{"@id":"https://www.codrey.com/#/schema/person/972cc49a6314bdf891a2a012e5ed0cc2"},"headline":"Resistor Color Code Calculator","datePublished":"2020-07-22T02:11:51+00:00","dateModified":"2020-07-23T16:02:29+00:00","mainEntityOfPage":{"@id":"https://www.codrey.com/tools/resistor-color-code-calculator/#webpage"},"wordCount":4,"commentCount":0,"publisher":{"@id":"https://www.codrey.com/#organization"},"image":{"@id":"https://www.codrey.com/tools/resistor-color-code-calculator/#primaryimage"},"thumbnailUrl":"https://www.codrey.com/wp-content/uploads/2020/07/Resistor-Color-Code-Calculator.png","articleSection":["Electrical Engineering Calculators"],"inLanguage":"en-US","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://www.codrey.com/tools/resistor-color-code-calculator/#respond"]}]},{"@type":"Person","@id":"https://www.codrey.com/#/schema/person/972cc49a6314bdf891a2a012e5ed0cc2","name":"Siddharth Kumar","image":{"@type":"ImageObject","@id":"https://www.codrey.com/#personlogo","inLanguage":"en-US","url":"https://secure.gravatar.com/avatar/03e69576e2ccb2fabaaad8143c6454a0?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/03e69576e2ccb2fabaaad8143c6454a0?s=96&d=mm&r=g","caption":"Siddharth Kumar"},"sameAs":["https://www.codrey.com/"],"url":"https://www.codrey.com/author/siddharth/"}]}</script>
+
+    <link rel="icon" href="img/chip (1).ico">    <!-- CUSTOM STYLE -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106332423-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-106332423-1');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.codrey.com/app/css/style.min.css">
+<script src="https://www.codrey.com/app/js/ResizeSensor.min.js" type="text/javascript"></script>
+<script src="https://www.codrey.com/app/js/ElementQueries.min.js" type="text/javascript"></script>
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link rel="icon" href="https://www.codrey.com/wp-content/uploads/2020/05/cropped-Codrey-Electronics-Icon-150x150.png" sizes="32x32" />
+<link rel="icon" href="https://www.codrey.com/wp-content/uploads/2020/05/cropped-Codrey-Electronics-Icon-300x300.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.codrey.com/wp-content/uploads/2020/05/cropped-Codrey-Electronics-Icon-300x300.png" />
+<meta name="msapplication-TileImage" content="https://www.codrey.com/wp-content/uploads/2020/05/cropped-Codrey-Electronics-Icon-300x300.png" />
+</head>
+<body>
+<div class="container">
+<div id="left-side-view">
+<div id="calculator-view">
+<nav>
+<ul>
+<li class="nav-item defaultNav"><a href="" data-band="3">حزمة 3</a></li>
+<li class="nav-item"><a href="" data-band="4"> حزمة 4</a></li>
+<li class="nav-item"><a href="" data-band="5">حزمة 5</a></li>
+<li class="nav-item"><a href="" data-band="6">حزمة 6</a></li>
+</ul>
+</nav>
+<div id="band-calculator" class="band-section">
+<div id="calculator">
+<div id="resistor-base">
+<svg preserveAspectRatio="xMidYMin slice" class="linessvg" width="185" height="68" viewBox="0 0 185 68" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="lines">
+<path class="lines" d="M92,70 c-7.5,23 -61,32 -56,40" opacity="1" />
+<path class="lines" d="M117,68 c-7.5,45 203,31 198,40" opacity="1" />
+<path class="lines" d="M142,68 c-7.5,53 461,20 456,40" opacity="1" />
+<path class="lines" d="M168,68 c-7.5,40 461,23 456,40" opacity="0" />
+<path class="lines" d="M202,68 c-7.5,33 461,22 456,40" opacity="0" />
+<path class="lines" d="M230,70 c-7.5,22 461,15 456,40" opacity="0" />
+</g>
+</svg>
+<svg id="redistr" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="220" viewBox="0 0 120 30" preserveAspectRatio="xMidYMax slice" id="redistr">
+<defs>
+<mask height="30" width="120" y="0" x="-7.5" id="clip-bands">
+<use height="100%" width="100%" fill="#ffffff" xlink:href="#shape" y="0" x="0" />
+</mask>
+</defs>
+<rect style="fill:#b5b5b6" height="6.5" width="120" y="11.75" x="0" id="lead" />
+<path style="fill:#f3c68e" d="m 31.956522,0 c 14.673913,0 14.673913,3.6 29.347826,3.6 c 14.673913,0 16.630435,-3 29.347826,-3.6 a 17.934783,15 0 0 1 0,30 c -14.673913,0 -14.673913,-3.6 -29.347826,-3.6 c -14.673913,0 -17.934783,3 -29.347826,3.6 a 19.565217,15 0 0 1 0,-30" id="shape" />
+<g mask="url(#clip-bands)">
+<path class="color-band" d="M36.521,0 v 30" />
+<path class="color-band" d="M46.521,0 v 30" />
+<path class="color-band" d="M56.521,0 v 30" />
+<path class="color-band" d="M66.521,0 v 30" />
+<path class="color-band" d="M76.521,0 v 30" />
+<path class="color-band" d="M86.521,0 v 30" />
+</g>
+</svg>
+</div>
+<div id="values">
+<h1 id="res-value">1.2MΩ</h1>
+<h2 id="ppm-value" style="display: none; margin: 0 0 0 8px"></h2>
+<h3 id="tolerance-value">±20% (960KΩ – 1.44MΩ)</h3>
+</div>
+</div>
+<div id="button-container">
+<div data-band="3" class="buttons three-band-buttons" id="buttons">
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div>Dev & Eng : Taher  &copy; alnoori <a class="link" href="index.html">الصفحة الرئيسية</a> | <a class="link" href="products.html">المزيد</a> | <a class="link" href="https://t.me/engineering_electrical9">تابع</a></div>
+</div>
+</div>
+<div id="gutter"></div>
+<div id="right-side-view">
+<h1 class="heading text-center">حاسبة لحساب رمز اللون المقاومة</h1>
+<p>تم تطوير رمز اللون المقاوم خلال عام 1920. وطُبعت الأشرطة الملونة على جسم مكونات المقاوم الصغيرة. بشكل عام ، بالنسبة لرمز اللون ، يمكننا استخدام ذاكري المقاوم هذا المسمى BBROY Great Britain Very Good Wife. بينما يشير حرف البداية إلى لون فريد. <a href="https://www.codrey.com/resistor/resistor-basics/">resistor</a> mnemonic called <span style="font-weight: bold;">BBROY</span> Great Britain Very Good Wife. Whereas, the beginning letter indicates a unique color.</p>
+<p>يحتوي اختصار الترميز اللوني هذا على اختصار لكيفية تحديد قيمة المقاوم.</p>
+<table>
+<caption class="caption">تمثيل رمز لون المقاومة</caption>
+<thead>
+<tr>
+<th>رمز اللون</th>
+<th>اختصار المقاومة</th>
+<th>لون الشريط</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>B</td>
+<td>
+<div class="circle-color">
+اسود <span class="circle" style="background-color: black;"></span>
+</div>
+</td>
+</tr>
+<tr>
+<td>1</td>
+<td>B</td>
+<td>
+<div class="circle-color">
+بني <span class="circle" style="background-color: #4D3727;"></span>
+</div>
+</td>
+</tr>
+<tr>
+<td>2</td>
+<td>R</td>
+<td>
+<div class="circle-color">
+أحمر <span class="circle" style="background-color: #f20b0b;"></span>
+</div>
+</td>
+</tr>
+<tr>
+<td>3</td>
+<td>O</td>
+<td>
+<div class="circle-color">
+برتقالي <span class="circle" style="background-color: #EF6C00;"></span>
+</div>
+</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Y</td>
+<td>
+<div class="circle-color">
+أصفر <span class="circle" style="background-color: #fff745;"></span>
+</div>
+</td>
+</tr>
+<tr>
+<td>5</td>
+<td>G</td>
+<td>
+<div class="circle-color">
+أخضر <span class="circle" style="background-color: #4ece57;"></span>
+</div>
+</td>
+</tr>
+<tr>
+<td>6</td>
+<td>B</td>
+<td>
+<div class="circle-color">
+ازق <span class="circle" style="background-color: #53ABB5;"></span>
+</div>
+</td>
+</tr>
+<tr>
+<td>7</td>
+<td>V</td>
+<td>
+<div class="circle-color">
+البنفسجي <span class="circle" style="background-color: #f675d0;"></span>
+</div>
+</td>
+</tr>
+<tr>
+<td>8</td>
+<td>G</td>
+<td>
+<div class="circle-color">
+رمادي <span class="circle" style="background-color: #cccccc;"></span>
+</div>
+</td>
+</tr>
+<tr>
+<td>9</td>
+<td>W</td>
+<td>
+<div class="circle-color">
+أبيض <span class="circle" style="background-color: #ffffff;"></span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p>تستخدم المقاومات معيار الترميز <span style="font-weight: bold;"> BS1852</span> (المعيار البريطاني) لتمثيل القيمة. يستخدم الحرف "R" للأوم ، و "K" للكيلو أوم ، و "M" للميجا أوم. على سبيل المثال ، يظهر المقاوم 4.7 كيلو أوم على شكل 4K7.</p>
+<h2 class="heading">حزام لون المقاومة</h2>
+<p>تحتوي مقاومات تكوين الكربون على 3 إلى 6 نطاقات ألوان مقاومة. يحتوي المقاوم ثلاثي النطاقات على ثلاثة ألوان مع مضاعف ولا تسامح.</p>
+<p>تحتوي مقاومات تكوين الكربون على 3 إلى 6 نطاقات ألوان مقاومة. يحتوي المقاوم ثلاثي النطاقات على ثلاثة ألوان مع مضاعف ولا تسامح.</p>
+<p>يُظهر مخطط رمز اللون 3 نطاقات و 4 نطاقات و 5 نطاقات و 6 أشرطة مقاومة.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>3 نطاقات المقاومة</th>
+<th>4 نطاقات المقاومة</th>
+<th>5 نطاقات المقاومة</th>
+<th>6 نطاقات المقاومة</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>الحزمة الاولى</td>
+<td>الرقم الأول</td>
+<td>الرقم الأول</td>
+<td>الرقم الأول</td>
+<td>الرقم الأول</td>
+</tr>
+<tr>
+<td>الحزمة الثانية</td>
+<td>الرقم الثاني</td>
+<td>الرقم الثاني</td>
+<td>الرقم الثاني</td>
+<td>الرقم الثاني</td>
+</tr>
+<tr>
+<td>الحزمة الثالثة</td>
+<td>قيمة المضاعف</td>
+<td>قيمة المضاعف</td>
+<td>الرقم الثالث</td>
+<td>الرقم الثالث</td>
+</tr>
+<tr>
+<td>الحزمة الرابعة</td>
+<td></td>
+<td>قيمة التسامح</td>
+<td>قيمة المضاعف</td>
+<td>قيمة التسامح</td>
+</tr>
+<tr>
+<td>الحزمة الخامسة</td>
+<td></td>
+<td></td>
+<td>قيمة التسامح</td>
+<td>قيمة التسامح</td>
+</tr>
+<tr>
+<td>الحزمة السادسة</td>
+<td></td>
+<td></td>
+<td></td>
+<td>معامل درجة الحرارة</td>
+</tr>
+</tbody>
+</table>
+<p>لمعرفة كيفية العثور على رمز اللون ، يشير كل لون إلى رقم يبدأ من 0 إلى 9. يمكن استخدام هذا الرقم كأول رقم مهم وثاني رقم مهم لثلاثة نطاقات و 4 نطاقات. بالنسبة لمقاومات النطاق المكونة من 5 نطاقات و 6 نطاقات ، تشير الأرقام الثلاثة الأولى إلى أرقام مهمة.</p>
+<p>يتم ضرب قيمة المضاعف في الرقم المعنوي (رقم واحد أو رقمان أو ثلاثة أرقام) للحصول على قيمة المقاومة المطلوبة. بالإضافة إلى ذلك ، فإن المقاومات ذات 4 نطاقات و 5 نطاقات و 6 نطاقات لها قيمة تحمل تتراوح من ± 0.10 إلى ± 10.</p>
+<p>المقاوم ذو 6 نطاقات له خاصية خاصة لمعامل درجة الحرارة للمقاومة ممثلة في جزء في المليون / كلفن. تشير قيمة جزء في المليون الأعلى إلى أن المقاوم يمكنه تحمل درجات الحرارة المرتفعة أو المنخفضة. الاختلاف من <a href="">المقاومة</a> ثابت لدرجة الحرارة.</p>
+<h2 class="heading">مخطط رمز لون المقاوم - 3 نطاقات 4 نطاقات 5 نطاقات و 6 نطاقات </h2>
+<p>لفهم كيفية قراءة رمز لون المقاوم لمقاومات النطاق 3/4/5/6 ، يمكنك استخدام مخطط الألوان هذا.</p>
+<div class="image-wrapper">
+<img class="img-fluid" alt="Resistor Color Code Chart" src="https://www.codrey.com/wp-content/uploads/2020/07/Resistor-Color-Code-Chart.png">
+</div>
+<p>من الرسم البياني أعلاه ، كل شريط لون على <a href="">المقاومة</a>يمثل رقمًا. على سبيل المثال ، لحساب 1.2MΩ ، يظهر المقاوم <span class="brown p1">بني</span> <span class="red p1">أحمر</span> <span class="green p1">أخضر</span> الألوان (اقرأ من اليسار إلى اليمين). الآن ضع النطاقين الأولين كقيمة رقمية والشريط الثالث كمضاعف (10 <sup> 5 </sup>).</p>
+<h2 class="heading">الانحرافات في ترميز لون المقاوم</h2>
+<p class="shortHeading">مصداقية</p>
+<p>لتلبية المقاومات ذات المواصفات العسكرية غالبًا ما يتم تصنيعها بشريط موثوقية. هذه الفرقة غير موجودة في الإلكترونيات التجارية. عادةً ما يأتي المقاوم رباعي النطاقات مع نطاق موثوقية.</p>
+<p class="shortHeading">المقاوم صفر أوم</p>
+<p>يأتي هذا المقاوم مع شريط أسود واحد يستخدم لتوصيل الآثار على لوحة الدوائر المطبوعة (PCB). يتم استخدامه كربط بين مفصلتين.</p>
+<p class="shortHeading">حزام مقاوم للذهب والفضة</p>
+<p>الفرقة الذهبية والفضية عرضة للمفاهيم الخاطئة عن الألوان الحقيقية في المقاوم. وبالتالي ، يتم استبدالها بشرائط ملونة باللونين الرمادي والأصفر.</p>
+<h2 class="heading">كيفية استخدام حاسبة رمز لون المقاوم</h2>
+<p>تحسب أداة حاسبة المقاوم رمز اللون لمقاومات 3 نطاقات ، و 4 نطاقات ، و 5 نطاقات ، و 6 نطاقات مقاومات عادةً في نطاق أوم ، وكيلو أوم ، وميجا أوم.</p>
+<p>تحتوي آلة حاسبة المقاومة على 1 إلى 6 ألوان نطاق مع المضاعف (Mul) والتسامح (Tol) و PPM / Kelvin. يجب عليك تحديد اللون المناسب المقابل لكل عمود. تخبر قيمة التسامح الدقة التي يتم بها تصنيع المقاوم. عادة ما تكون للذهب 5٪ وللفضة 10٪.</p>
+<p>سيعرض هذا قيمة المقاومة الحقيقية مع التسامح ومعامل درجة الحرارة للمقاومة.</p>
+<h2 class="heading">أمثلة على رمز لون المقاوم</h2>
+<p>لاستكشاف المزيد ، دعنا نناقش بعض الأمثلة على رمز لون المقاوم للمقاومات 4 و 5 و 6 نطاقات.</p>
+<p class="shortHeading">4 الفرقة اللون كود</p>
+<p>على سبيل المثال ، المقاوم رباعي النطاقات له لون <span class="brown p1">بني</span> <span class="black p1">أسود</span> <span class="orange p1">برتقالي</span> <span class="gold p1">ذهبي</span> ما هي قيمة المقاوم؟</p>
+<div class="image-wrapper">
+<img class="img-fluid" alt="10k ohm Resistor Color Code" src="https://www.codrey.com/wp-content/uploads/2020/07/4-Band-Resistor-10K.png">
+</div>
+<p>باستخدام مخطط الألوان ، اكتب القيم كـ ، 1/0/10<sup>3</sup> = 10 * 10<sup>3</sup> = 10K ohm/10K. التسامح ± 5٪ للذهب. لذلك ، تتراوح القيمة من 9.5K إلى 10.5KΩ.</p>
+<p class="shortHeading">5 Band Color Code</p>
+<p> <span class="brown p1">بني</span> <span class="black p1">أسود</span> <span class="red p1">أحمر</span> <span class="brown p1">بني</span>.</p>
+<div class="image-wrapper">
+<img class="img-fluid" alt="5 Band 1K ohm Resistor Color Code" src="https://www.codrey.com/wp-content/uploads/2020/07/5-Band-Resistor-1K.png">
+</div>
+<p>اكتب القيم بصيغة, 0/1//0/10<sup>2</sup> = 10 * 100 = 1K ohm/1K. التسامح هو ± 1٪ للون البني. ومن ثم ، فإن قيمة المقاوم هي 900Ω إلى 1.01KΩ</p>
+<p class="shortHeading">6 Band Color Code</p>
+<p>يحتوي المقاوم ذو 6 نطاقات <span class="black p1">أسود</span> <span class="brown p1">بني</span> <span class="red p1">أحمر</span> <span class="brown p1">بني</span> <span class="blue p1">أزرق</span> <span class="brown p1">بني</span></p>
+ <div class="image-wrapper">
+<img class="img-fluid" alt="4 Band 120 Ohms Resistor Color Code" src="https://www.codrey.com/wp-content/uploads/2020/07/6-Band-Resistor-120-Ohms.png">
+</div>
+<p>باستخدام المخطط ، القيم هي 0/1/2/101 = 120 0hm / 120R. التفاوت ± 0.25٪ للأزرق ومعامل درجة الحرارة للمقاومة 100 جزء في المليون. لذا تصبح المقاومة 119.7Ω -120.3Ω</p>
+<h2 class="heading">قيم المقاوم القياسية</h2>
+<p>تم توحيد الترميز اللوني الإلكتروني من قبل جمعية الصناعات الإلكترونية (EIA) ولاحقًا من قبل اتحاد مصنعي الراديو (RMA) كعلامة لونية قياسية للمقاومات.</p>
+<p>يتغير رمز التأشير هذا من عقد إلى عقد آخر. يُعرف هذا باسم رمز اللون EIA. لكل نطاق تفاوت ، يخصص EIA سلسلة E (E3 ، E6 ، E12 ، E24 و E96) لتسمية قيم المقاوم.</p>
+<p>مقاومات العقد القياسية (المعروفة أيضًا بالقيم المفضلة) موضحة في الجدول أدناه. يبدأ حساب المقاومة من 1 أوم بمدى تفاوت (36٪ ، 10٪ ، 5٪ و 1٪).</p>
+<table>
+<tbody>
+<tr>
+<th colspan="10">سلسلة E3 - مقاومة مع تسامح بنسبة ± 36٪ (القيمة بالأوم)</th>
+</tr>
+<tr>
+<td>1.0</td>
+<td>2.2</td>
+<td>4.7</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th colspan="10">سلسلة E6 - مقاومة بنسبة تسامح بنسبة 20٪ (القيمة بالأوم)</th>
+</tr>
+<tr>
+<td>1.0</td>
+<td>1.5</td>
+<td>2.2</td>
+<td>3.3</td>
+<td>4.7</td>
+<td>6.8</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th colspan="10">سلسلة E12 - مقاومة تسامح بنسبة ± 10٪ (القيمة بالأوم)</th>
+</tr>
+<tr>
+<td>1.0</td>
+<td>1.2</td>
+<td>1.5</td>
+<td>1.8</td>
+<td>2.2</td>
+<td>2.7</td>
+<td>3.3</td>
+<td>3.9</td>
+<td>4.7</td>
+<td>5.6</td>
+</tr>
+<tr>
+<th colspan="10">سلسلة E24 - مقاومة بنسبة تسامح ± 5٪ (القيمة بالأوم)</th>
+</tr>
+<tr>
+<td>1.0</td>
+<td>1.1</td>
+<td>1.2</td>
+<td>1.3</td>
+<td>1.5</td>
+<td>1.6</td>
+<td>1.8</td>
+<td>2.0</td>
+<td>2.2</td>
+<td>2.4</td>
+</tr>
+<tr>
+<td>2.7</td>
+<td>2.9</td>
+<td>3.0</td>
+<td>3.3</td>
+<td>3.6</td>
+<td>4.3</td>
+<td>4.7</td>
+<td>5.1</td>
+<td>5.6</td>
+<td>6.2</td>
+</tr>
+<tr>
+<td>6.8</td>
+<td>7.2</td>
+<td>8.2</td>
+<td>9.1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th colspan="10">سلسلة E96 - مقاومة بنسبة تسامح ± 1٪ (القيمة بالأوم)</th>
+</tr>
+<tr>
+<td>1</td>
+<td>1.02</td>
+<td>1.05</td>
+<td>1.07</td>
+<td>1.10</td>
+<td>1.13</td>
+<td>1.15</td>
+<td>1.18</td>
+<td>1.21</td>
+<td>1.24</td>
+</tr>
+<tr>
+<td>1.27</td>
+<td>1.30</td>
+<td>1.33</td>
+<td>1.37</td>
+<td>1.40</td>
+<td>1.43</td>
+<td>1.47</td>
+<td>1.50</td>
+<td>1.54</td>
+<td>1.58</td>
+</tr>
+<tr>
+<td>1.62</td>
+<td>1.65</td>
+<td>1.69</td>
+<td>1.74</td>
+<td>1.78</td>
+<td>1.82</td>
+<td>1.87</td>
+<td>1.91</td>
+<td>1.96</td>
+<td>2.00</td>
+</tr>
+<tr>
+<td>2.05</td>
+<td>2.10</td>
+<td>2.15</td>
+<td>2.21</td>
+<td>2.26</td>
+<td>2.32</td>
+<td>2.37</td>
+<td>2.43</td>
+<td>2.49</td>
+<td>2.55</td>
+</tr>
+<tr>
+<td>2.61</td>
+<td>2.67</td>
+<td>2.74</td>
+<td>2.80</td>
+<td>2.87</td>
+<td>2.94</td>
+<td>3.01</td>
+<td>3.09</td>
+<td>3.16</td>
+<td>3.24</td>
+</tr>
+<tr>
+<td>3.32</td>
+<td>3.40</td>
+<td>3.48</td>
+<td>3.57</td>
+<td>3.65</td>
+<td>3.74</td>
+<td>3.83</td>
+<td>3.92</td>
+<td>4.02</td>
+<td>4.12</td>
+</tr>
+<tr>
+<td>4.22</td>
+<td>4.32</td>
+<td>4.42</td>
+<td>4.53</td>
+<td>4.64</td>
+<td>4.75</td>
+<td>4.87</td>
+<td>4.99</td>
+<td>5.11</td>
+<td>5.23</td>
+</tr>
+<tr>
+<td>5.36</td>
+<td>5.49</td>
+<td>5.62</td>
+<td>5.76</td>
+<td>5.90</td>
+<td>6.04</td>
+<td>6.19</td>
+<td>6.34</td>
+<td>6.49</td>
+<td>6.65</td>
+</tr>
+<tr>
+<td>6.81</td>
+<td>6.98</td>
+<td>7.15</td>
+<td>7.32</td>
+<td>7.50</td>
+<td>7.68</td>
+<td>7.87</td>
+<td>8.06</td>
+<td>8.25</td>
+<td>8.45</td>
+</tr>
+<tr>
+<td>8.66</td>
+<td>8.87</td>
+<td>9.09</td>
+<td>9.31</td>
+<td>9.53</td>
+<td>9.76</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>للعثور على قيم المقاوم من السلسلة E ، خذ المقاوم المفضل مع التسامح. سنحصل على المقاومة بضرب القيمة بثابت المضاعف. على سبيل المثال ، المقاوم سلسلة E6 (1 أوم) مع التسامح ± 20 ، مجموعة المقاومات هي 1 ، 20 ، 400 ، 8 كيلو ، 160 كيلو.</p>
+<h2 class="heading">استنتاج</h2>
+<p>لا تحتوي مقاومات شريط الكربون على قيمة المقاومة والتسامح المطبوع على أجسامها بسبب حجمها. ومن ثم يساعد مخطط رمز لون المقاوم والآلة الحاسبة في معرفة قيمة المقاوم دون استخدام مقياس رقمي متعدد.</p>
+<p>فيما يلي بعض النقاط التي يجب تذكرها في الترميز اللوني للمقاوم.</p>
+<ol>
+<li><span class="bold">رمز لون المقاوم يقول أن الفرقة الخامسة سوداء ، أي نوع من المقاوم؟</span>
+<p>بالنسبة لمقاوم لف السلك ، يكون الشريط الخامس أسودًا وللمقاوم القابل للانصهار ، يكون الشريط الخامس باللون الأبيض. إذا كان الشريط الوحيد (اللون الأسود) في المنتصف هو المقاوم صفر أوم.</p>
+</li>
+<li><span class="bold">من أي جانب يجب أن أقرأ المقاوم؟</span>
+<p>اقرأ من اليسار إلى اليمين. الفكرة هي أن العصابات الذهبية أو الفضية (للتسامح) موجودة على الجانب الأيمن. إذا لم تكن العصابات الذهبية والفضية موجودة ، فسيكون الشريط القريب من السلك هو الفرقة الأولى.</p>
+</li>
+<li><span class="bold">ما هو نوع السلسلة E الأكثر استخدامًا؟</span>
+<p>في معظم الدوائر ، السلاسل المفضلة هي E6 و E12 و E24. سلسلة E96 عالية التكلفة حيث أن تحملها أقل.</p>
+</li>
+</ol>
+</div>
+</div>
+<script src="https://www.codrey.com/app/js/utils.min.js" type="text/javascript"></script>
+<script src="https://www.codrey.com/app/js/app.min.js" type="text/javascript"></script>
+</body>
+</html>

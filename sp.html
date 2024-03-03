@@ -1,0 +1,648 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>موقع الهندسة الكهربائية</title>
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/responsee.css">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+	<link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <!-- CUSTOM STYLE -->
+    <link rel="stylesheet" href="css/template-style.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<script src="https://kit.fontawesome.com/486626b2de.js" crossorigin="anonymous"></script>
+	<link rel="shortcut icon" href="http://www.sengpielaudio.com/favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+	<meta name="content-language" content="en">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta name="description" content="Parallel Resistor Calculator R1 + R2 = R equivalent resistance circuit equivalent total resistor finder made easy piggyback = parallel - Eberhard Sengpiel sengpielaudio">
+	<meta name="keywords" content="parallel,resistance,resistor,calculate,calculator,paralleled,widerstand,widerst&auml;nde,schaltung,rechner,berechnung,wellenl&auml;nge,schallwelle,luft,frequenz,temperatur,mikrofonaufnahmetechnik,tonstudiotechnik,grundwissenfragen,fragen,sengpielaudio,tonstudio,aussteuerungsmesser,hallradius,aufnahmetechnik,tontechnik,Eberhard-Sengpiel,audiotechnik,tonmeister,surround,sound,toningenieur,tonmeister,akustik,antworten,audio,audioaufnahmen,audiolinks,audiosystemtechnik,audiotechnik,bezugsschalldruck,Blauert,Blumlein,dB,deccadreieck,dekorrelation,diffusfeld,druckgradient,druckstau,formanten,mikrofone,mikrofonforum,forum,freifeld,haaseffekt,hallradius,hauptmikrofone,klang,klangfarbe,lateralisation,laufzeitdifferenzen,laufzeitstereofonie,lokalisation,mikrofonsysteme,mikrofontechnik,mikrofonanordnung,mikrofonaufstellungen,musikaufnahmen,nachhall,nachhallzeit,panpot,pegel,pegeldifferenzen,pegelunterschiede,psychoakustik">
+	<meta name="abstract" content="Eberhard Sengpiel: Berechnungen zur Mikrofonaufnahmetechnik und der Elektro- und Psychoakustik">
+	<meta name="author" content="Eberhard Sengpiel">
+	<meta name="publisher" content="sengpielaudio">
+	<meta name="copyright" content="© ebs">
+	<meta name="DateModified" content="2014-08-01">
+	<meta name="robots" content="index,follow">
+	  </head>
+
+<!-- Parallel Resistance Calculator -->
+<script language="JavaScript">
+<!-- start
+var R1 = 0;
+var R2 = 0;
+var R = 0;
+var R1M = 0;
+var R2M = 0;
+var RM = 0;
+function clearBoxes(form)
+{
+form.R1.value = "";
+form.R2.value = "";
+form.R.value = "";
+form.R1.focus();
+}
+function clearR1(form)
+{
+form.R1.value = "";
+form.R1.focus();
+}
+function clearR2(form)
+{
+form.R2.value = "";
+form.R2.focus();
+}
+function clearR(form)
+{
+form.R.value = "";
+form.R.focus();
+}
+function solve(form)
+{
+var i = 3;
+if(!form.R1.value) R1 = 0;
+else R1 = eval(form.R1.value);
+if(R1 == 0) i--;
+if(!form.R2.value) R2 = 0; 
+else R2 = eval(form.R2.value);
+if(R2 == 0) i--;
+if(!form.R.value) R = 0;
+else R = eval(form.R.value);
+if(R == 0) i--;
+R1M = eval(form.R1M.value);
+R2M = eval(form.R2M.value);
+RM = eval(form.RM.value);
+R1=R1*R1M;
+R2=R2*R2M;
+R=R*RM;
+if(i == 0) return;
+if(i == 1)
+{
+alert("\nMissing a value. Two values are required.\n");
+return;
+}
+if(R1 == 0)
+{
+R1 = (R*R2)/(R2-R);
+form.R1.value = R1/R1M;
+form.R1.focus();
+return; 
+}
+if(R2 == 0)
+{ 
+R2 = (R*R1)/(R1-R);
+form.R2.value = R2/R2M;
+form.R2.focus();
+return;
+}
+R = (R1*R2)/(R1+R2);
+form.R.value = R/RM;
+form.R.focus();
+return;
+}
+// end Parallel Resistance Calculator -->
+</script>
+
+<!-- Parallel Resistor Calculator -->
+<script language="JavaScript">
+<!-- start
+var sigfig=5;
+var R1=0;
+var R2=0;
+var R3=0;
+var R4=0;
+var R5=0;
+var R6=0;
+var R7=0;
+var R8=0;
+var R9=0;
+var R10=0;
+var total=0;
+// end Parallel Resistor calculator -->
+</script>
+
+<!-- Clearing the Boxes -->
+<script language="JavaScript">
+<!-- start
+function clearboxes(boxes)
+{
+total=0;
+document.boxes.r1.value=""
+document.boxes.r2.value=""
+document.boxes.r3.value=""
+document.boxes.r4.value=""
+document.boxes.r5.value=""
+document.boxes.r6.value=""
+document.boxes.r7.value=""
+document.boxes.r8.value=""
+document.boxes.r9.value=""
+document.boxes.r10.value=""
+document.answer.r11.value="";
+R1=0;
+R2=0;
+R3=0;
+R4=0;
+R5=0;
+R6=0;
+R7=0;
+R8=0;
+R9=0;
+R10=0;
+}
+// end Clearing the Boxes -->
+</script>
+
+<!-- Function Boxes -->
+<script language="JavaScript">
+<!-- start
+function calc(boxes)
+{
+if (document.boxes.r1.value!=""){R1=document.boxes.r1.value;R1=(1/R1)};
+if (document.boxes.r2.value!=""){R2=document.boxes.r2.value;R2=(1/R2)};
+if (document.boxes.r3.value!=""){R3=document.boxes.r3.value;R3=(1/R3)};
+if (document.boxes.r4.value!=""){R4=document.boxes.r4.value;R4=(1/R4)};
+if (document.boxes.r5.value!=""){R5=document.boxes.r5.value;R5=(1/R5)};
+if (document.boxes.r6.value!=""){R6=document.boxes.r6.value;R6=(1/R6)};
+if (document.boxes.r7.value!=""){R7=document.boxes.r7.value;R7=(1/R7)};
+if (document.boxes.r8.value!=""){R8=document.boxes.r8.value;R8=(1/R8)};
+if (document.boxes.r9.value!=""){R9=document.boxes.r9.value;R9=(1/R9)};
+if (document.boxes.r10.value!=""){R10=document.boxes.r10.value;R10=(1/R10)};
+total = R1+R2+R3+R4+R5+R6+R7+R8+R9+R10;
+total = 1/total;
+sigfig=eval((document.box.b9.value)-1);
+if (sigfig>-1){
+total=total.toExponential(sigfig);
+if (total>.001 && total <1000){total=total*1}
+}
+document.answer.r11.value=" "+total;
+total=0;
+}
+// end Function boxes -->
+</script>
+</head>
+
+<body background="bbbbbbbb.jpg" bgcolor="#FFFFFF" text="#0000FF" link="#0000FF" vlink="#990066" alink="#990066"> 
+<font size="1">&#160;</font><br>
+<table width="194" align="center">
+<tr>
+<td width="136" align="right"><a href="Desktop/taher/index.html" target="_self"><font face="Arial" color="red"><b>موقع موسوعة المهندس الكهربائي</b></font></a></td>
+</tr>
+</table>
+<font size="1">&#160;</font><br>
+<div align="center"><font size="7" face="Arial"><b>&#9679; </b></font><a href="" target="_blank"><font size="7" face="Arial" color="blue"><b>احسب</b></font></a>&#160;&#160;<a href="" target="_blank"><font size="7" face="Arial" color="blue"><b>المقاومات</b></font></a><font size="7" face="Arial"><b> في </b></font><a href="http://www.google.com/search?hl=en&q=sengpielaudio+parallel+circuit&filter=0" target="_blank"><font size="7" face="Arial" color="red"><b>التوصيل بالتوازي</b></font></a><font size="7" face="Arial"><b> &#9679;</b></font><br>
+<font size="1">&#160;</font><br>
+<a href="" target="_blank"><font size="6" face="Arial" color="blue"><b>حاسبة</b></font></a>&#160;&#160;<a href="" target="_blank"><font size="6" face="Arial" color="blue"><b>المقاومة</b></font></a>&#160;&#160;<a href="" target="_blank"><font size="6" face="Arial" color="blue"><b>الموازية</b></font></a><br>
+<font size="1">&#160;</font><br>
+<font size="5" face="Arial" color="Silver"><b>مكتشف المقاوم</b><a href="" target="_blank"><b> المتوازي</b></a><b> يعني بالتوازي وليس في سلسلة.</b></font><br>
+<font size="1">&#160;</font><br>
+<a href="" target="_blank"><font size="5" face="Arial" color="blue"><b>حساب مجموع R</b></font></a><font size="5" face="Arial"><b>: </b></font><font size="5" face="Arial"><b>R</b></font><font size="4" face="Arial" color="blue"><b>total</b></font><font size="5" face="Arial"><b> و </b></font><font size="5" face="Arial"><b>المقاومات الموازية R1 أو R2</b></font><br>
+<font size="1">&#160;</font><br>
+<center><font size="4" face="Arial">صيغة المقاومات على التوالي: </font><font size="4" face="Times"><b><i>R</i></b></font><font size="4" face="Arial"><sub>total</sub> = </font><font size="4" face="Times"><b><i>R</i></b></font><font size="4" face="Arial"><sub>1</sub> + </font><font size="4" face="Times"><b><i>R</i></b></font><font size="4" face="Arial"><sub>2</sub> + </font><font size="4" face="Times"><b><i>R</i></b></font><font size="4" face="Arial"><sub>3</sub> + ...</font></center>
+<noscript>
+<table>
+<tr>
+<td bgcolor="#0000FF"><font color="#FFFFFF" face="Arial"><b><br>
+</b></font></td>
+</tr>
+</table>
+</noscript>
+</div>
+<font size="1">&#160;</font><br>
+<table border="0" align="center" cellpadding="0" cellspacing="0" style="background:#FFFFFF">
+<tr>
+<td align="center"><font face="Arial" color="black">R<sub>total</sub></font></td>
+<td><img src="ParallelWiderstaende.gif" alt="Parallel Resistors" width="106" height="89"></td>
+<td align="center"><font face="Arial" color="black"><b>Formula:</b><br>
+&#160;<b>R<sub>total</sub> = R1&times;R2/(R1+R2)</b></font><br>
+&#160;</td>
+</tr>
+</table>
+<font size="1">&#160;</font><br>
+<center>
+<font face="Arial">الرجاء إدخال قيمتين للمقاوم ، سيتم حساب القيمة الثالثة للدائرة المتوازية. <b></b> <br>
+يمكنك حتى إدخال المقاومة الإجمالية </font><font size="4" face="Times"><i>R</i></font><font face="Arial"><sub>total</sub> ومقاومة معروفة </font><font size="4" face="Times"><i> R</i></font><font face="Arial"><sub>1</sub> or </font><font size="4" face="Times"><i>R</i></font><font face="Arial"><sub>2</sub>.</font></center>
+<br>
+<form method="post">
+<table border="1" align="center" cellpadding="0" cellspacing="0" style="background:#EFEFEF">
+<tr>
+<td>
+<table cellpadding="3" cellspacing="0">
+<tr>
+<td colspan="2"><font size="1">&#160;</font></td>
+</tr>
+<tr>
+<td align="right"><font face="Arial"><b>المقاومة </b></font><font size="4" face="Times"><b><i>R</i></b></font><font face="Arial"><sub><b>1</b></sub>&#160;</font></td>
+<td>
+<input size="8" maxlength="12" name="R1" style="background:#FFFFFF">
+<select name=R1M >
+<option value=0.000001>مايكرواوم
+<option value=0.001>ملي اوم
+<option value=1 selected>اوم
+<option value=1000>كليو اوم
+<option value=1000000>ميكا اوم</option>
+</select>
+</td>
+</tr>
+<tr>
+<td align="right"><font face="Arial"><b>المقاومة </b></font><font size="4" face="Times"><b><i>R</i></b></font><font face="Arial"><sub><b>2</b></sub>&#160;</font></td>
+<td>
+<input size="8" name="R2" style="background:#FFFFFF">
+<select name=R2M >
+<option value=0.000001>مايكرواوم
+<option value=0.001>ملي اوم
+<option value=1 selected>اوم
+<option value=1000>كليو اوم
+<option value=1000000>ميكا اوم</option>
+</select>
+</td>
+</tr>
+<tr>
+<td align="right"><font face="Arial">&#160;<b>المقاومة الموازية </b></font><font size="4" face="Times"><b><i>R</i></b></font><font face="Arial"><b><sub>total</sub></b>&#160;</font></td>
+<td>
+<input size="8" name="R" style="background:#FFFFFF">
+<select name=RM >
+<option value=0.000001>مايكرواوم
+<option value=0.001>ملي اوم
+<option value=1 selected>اوم
+<option value=1000>كليو اوم
+<option value=1000000>ميكا اوم</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+<input type="reset" onClick="clearBoxes(this.form);" value="&#160;&#160;تفريغ&#160&#160;&#160;" style="background:#6699FF">
+</td>
+<td>
+<input type="button" onClick="solve(this.form);" value="احسب" style="background:#6699FF">
+</td>
+</tr>
+<tr>
+<td colspan="2"><font size="1">&#160;</font></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</form>
+
+<p align="center"><font face="Arial"></font><font face="Arial">صيغة (معادلة) لحساب مقاومين <font size="4" face="Times"><i>R</i></font><sub>1</sub> و <font size="4" face="Times"><i>R</i></font><sub>2</sub> متصل بالتوازي:</font></p>
+<p align="center"><img src="FormulaResistorParallel01.gif" alt="Parallel01" width="141" height="44"></p>
+<p align="center"><img src="FormulaResistorParallel02.gif" alt="Parallel02" width="224" height="44"></p>
+<p align="center"><font face="Arial">حساب المقاومة الموازية اللازمة <font size="4" face="Times"><i>R</i></font><sub>2</sub>, عندما <font size="4" face="Times"><i>R</i></font><sub>1</sub> وإجمالي المقاومة  <font size="4" face="Times"><i>R</i></font><sub>total</sub></font></p>
+<p align="center"><img src="FormulaResistorParallel11.gif" alt="Formula resistor parallel" width="113" height="53"></p>
+<table border="0" align="center" cellpadding="0" cellspacing="0" style="background:#FFFFFF">
+<tr>
+<td>
+<font face="Arial">حل الصيغة<font face="Arial"> <font size="4" face="Times"><i> R</i></font><sub>total</sub>= (<font size="4" face="Times"><i>R</i></font><sub>1</sub>&times;<font size="4" face="Times"><i> R</i></font><sub>2</sub>) / (<font size="4" face="Times"><i>R</i></font><sub>1</sub> +<font size="4" face="Times"><i> R</i></font><sub>2</sub>) for <font size="4" face="Times"><i>R</i></font><sub>1</sub>:</font><br>
+الخطوة الأولى هي مسح كل الكسور بضربها في الأصغر<br>
+القاسم المشترك ، هذا هو <font size="4" face="Times"><i>R</i></font><sub>t</sub> &times; <font size="4" face="Times"><i>R</i></font><sub>1</sub> &times; <font size="4" face="Times"><i>R</i></font><sub>2</sub> ... so we get:</font><br>
+<font face="Arial">1/</font><font size="4" face="Times"><i>R</i></font><sub>total</sub> = 1/<font size="4" face="Times"><i>R</i></font><sub>1</sub> + 1/<font size="4" face="Times"><i>R</i></font><sub>2</sub><br>
+<font size="4" face="Times"><i>R</i></font><sub>total</sub> &times; <font size="4" face="Times"><i>R</i></font><sub>1</sub> &times; <font size="4" face="Times"><i>R</i></font><sub>2</sub>[1/<font size="4" face="Times"><i>R</i></font><sub>total</sub> = 1/<font size="4" face="Times"><i>R</i></font><sub>1</sub> + 1/<font size="4" face="Times"><i>R</i></font><sub>2</sub>]<br>
+<font size="4" face="Times"><i>R</i></font><sub>1</sub> &times; <font size="4" face="Times"><i>R</i></font><sub>2</sub> = <font size="4" face="Times"><i>R</i></font><sub>total</sub> &times; <font size="4" face="Times"><i>R</i></font><sub>2</sub> + <font size="4" face="Times"><i>R</i></font><sub>total</sub> &times; <font size="4" face="Times"><i>R</i></font><sub>1</sub><font face="Arial"> ثم جمع الشروط مع <font size="4" face="Times"><i>R</i></font><sub>1</sub> and solve</font><br>
+<font size="4" face="Times"><i>R</i></font><sub>1</sub> &times; <font size="4" face="Times"><i>R</i></font><sub>2</sub> &minus; <font size="4" face="Times"><i>R</i></font><sub>total</sub> &times; <font size="4" face="Times"><i>R</i></font><sub>1</sub> = <font size="4" face="Times"><i>R</i></font><sub>total</sub> &times; <font size="4" face="Times"><i>R</i></font><sub>2</sub><br>
+<font size="4" face="Times"><i>R</i></font><sub>1</sub><font face="Arial">(</font><font size="4" face="Times"><i>R</i></font><sub>2</sub> &minus; <font size="4" face="Times"><i>R</i></font><sub>total</sub><font face="Arial">)</font> = <font size="4" face="Times"><i>R</i></font><sub>2</sub> &times; <font size="4" face="Times"><i>R</i></font><sub>total</sub><br>
+<font face="Arial">خطوةاخرى:</font><br>
+<font size="4" face="Times"><i><b>R</b></i></font><font face="Arial"><b><sub>1</sub> = </b></font><font size="4" face="Times"><b><i>R</i></b></font><font face="Arial"><b><sub>2 </sub></b>&times; </font><font size="4" face="Times"><b><i>R</i></b></font><font face="Arial"><b><sub>total</sub> / (</b></font><font size="4" face="Times"><b><i>R</i></b></font><font face="Arial"><b><sub>2</sub> &minus; </b></font><font size="4" face="Times"><b><i>R</i></b></font><font face="Arial"><b><sub>total</sub>)</b></font><br>
+<font face="Arial">او:</font><br>
+<font size="4" face="Times"><i><b>R</b></i></font><font face="Arial"><b><sub>2</sub> = </b></font><font size="4" face="Times"><b><i>R</i></b></font><font face="Arial"><b><sub>1</sub></b> &times; </font><font size="4" face="Times"><b><i>R</i></b></font><font face="Arial"><b><sub>total</sub>/ (</b></font><font size="4" face="Times"><b><i>R</i></b></font><font face="Arial"><b><sub>1</sub> &minus; </b></font><font size="4" face="Times"><b><i>R</i></b></font><font face="Arial"><b><sub>total</sub>)</b></font></td>
+</tr>
+</table>
+<p align="center"><font face="Arial"><b></b> ملاحظة: يمكن لهذه الآلة الحاسبة أيضًا حل مسائل رياضية أخرى. حساب المقاومات بالتوازي<br>
+هي بالضبط نفس الحسابات المطلوبة للمحثات على التوازي أو للمكثفات المتسلسلة.</font></p>
+<table border="0" align="center" cellpadding="0" cellspacing="0" style="background:#FFFFFF">
+<tr>
+<td><font face="Arial">مقاومتان متوازيتان والمقاومة الكلية الناتجة: اثنان من نفس القيمة ، <br>
+أظهر أيضًا معادلة أن النتائج دائمًا نصف. هذا يجعل الأمر أسهل عند <br>
+تصميم الدوائر أو النماذج الأولية. في حالة الأحرف الكبيرة ، يكون الأمر دائمًا مزدوجًا ، ثم مرات الظهور مرة أخرى <br>
+ببساطة اجمع بالتوازي.</font></td>
+</tr>
+</table>
+<p align="center"><img src="Linie06RainbowDick.gif" width="576" height="5" alt="Microphone sensitivity conversion"></p>
+<p align="center"><a href="calculator-parallel.htm" target="_blank"><font size="5" face="Arial" color="blue"><b>الحساب: أزواج المقاوم - آلة حاسبة هندسية عكسية</b></font></a><br>
+<font size="5" face="Arial"><b>Search of <i>R</i><sub>1</sub> and <i>R</i><sub>2</sub> مع مقاومة الهدف المعروفة</b></font></p>
+<p align="center"><img src="Linie06RainbowDick.gif" width="576" height="5" alt="Microphone sensitivity conversion "></p>
+<p align="center"><font face="Arial" size="6"><b>&#9679; احسب العديد من المقاومات بالتوازي &#9679;</b></font></p>
+<table border="0" align="center" cellpadding="0" cellspacing="0" style="background:#FFFFFF">
+<tr>
+<td><font face="Arial">تحدد هذه الآلة الحاسبة مقاومة <b>ما يصل إلى 10 مقاومات بالتوازي</b>.<br>
+أدخل المقاومات في المربعات أدناه وعندما يتم إدخال جميع القيم ،<br>
+انقر فوق الزر "حساب" وستظهر النتيجة في المربع الموجود أسفل هذا الزر.<br>
+كاختبار ، إذا أدخلنا مقاومات 4 و 6 و 12 أوم ، يجب أن تكون الإجابة 2 أوم.<br>
+ملاحظة: لا يؤدي مسح المربعات يدويًا إلى إعادة تعيين القيم المخزنة. يستخدم &quot;إعادة تعيين&quot;.</font></td>
+</tr>
+</table>
+<br>
+<form name="boxes">
+<table width="300" border="1" align="center" cellpadding="0" cellspacing="0" style="background:#EFEFEF">
+<tr>
+<td>
+<table align="center" cellpadding="3" cellspacing="0">
+<tr>
+<td align="center" width="180">
+<input name="r1" size="12" style="background:#C0C0C0">
+<br>
+<input name="r2" size="12" style="background:#C0C0C0">
+<br>
+<input name="r3" size="12" style="background:#C0C0C0">
+<br>
+<input name="r4" size="12" style="background:#C0C0C0">
+<br>
+<input name="r5" size="12" style="background:#C0C0C0">
+<br>
+<input name="r6" size="12" style="background:#C0C0C0">
+<br>
+<input name="r7" size="12" style="background:#C0C0C0">
+<br>
+<input name="r8" size="12" style="background:#C0C0C0">
+<br>
+<input name="r9" size="12" style="background:#C0C0C0">
+<br>
+<input name="r10" size="12" style="background:#C0C0C0">
+</td>
+</tr>
+</table>
+<font size="1">&#160;</font><br>
+<center>
+<input type="button" value="احسب" size="12" OnClick="calc(boxes);return true" style="background:#6699FF">
+</center>
+</td>
+</tr>
+</table>
+</form>
+
+<!-- This is box 11 -->
+<form name="answer">
+<center>
+<input name="r11" size="12" style="background:#FFFFFF">
+</center>
+</form>
+
+<form>
+<center>
+<input type="reset" value=" تفريغ " size="25" onClick="clearboxes(boxes);return true" style="background:#6699FF">
+</center>
+</form>
+
+<!-- Format box -->
+<form name="box">
+<center><font face="Arial">عدد معنوي:</font>
+<input name="b9" value="5" size="3" style="background:#FFFFFF">
+</center>
+</form>
+<p align="center"><a href="calculator-ohmslaw.htm" target="_blank"><font size="5" face="Arial" color="blue"><b>قانون أوم - الآلة الحاسبة والصيغ</b></font></a></p>
+<p align="center"><font size="5" face="Arial"><b>مقاومتان متوازيتان والمقاومة الكلية الناتجة</b></font><br>
+<font size="4" face="Arial">مقاومة تتراوح من 1 أوم إلى 100 أوم</font></p>
+<table width="500" border="1" align="center" cellpadding="0" cellspacing="0" style="background:#EFEFEF">
+<tr>
+<td rowSpan="2"><font face="Arial">R2</font></td>
+<td colSpan="12"><font face="Arial">R1</font></td>
+</tr>
+<tr>
+<td><font face="Arial"><b>1</b></font></td>
+<td><font face="Arial"><b>1.5</b></font></td>
+<td><font face="Arial"><b>2.2</b></font></td>
+<td><font face="Arial"><b>3.3</b></font></td>
+<td><font face="Arial"><b>4.7</b></font></td>
+<td><font face="Arial"><b>6.8</b></font></td>
+<td><font face="Arial"><b>10</b></font></td>
+<td><font face="Arial"><b>15</b></font></td>
+<td><font face="Arial"><b>22</b></font></td>
+<td><font face="Arial"><b>33</b></font></td>
+<td><font face="Arial"><b>47</b></font></td>
+<td><font face="Arial"><b>68</b></font></td>
+</tr>
+<tr>
+<td><font face="Arial"><b>1</b></font></td>
+<td style="background:#C0C0C0"><font face="Arial">0.5</font></td>
+<td><font face="Arial">0.6</font></td>
+<td><font face="Arial">0.69</font></td>
+<td><font face="Arial">0.77</font></td>
+<td><font face="Arial">0.83</font></td>
+<td><font face="Arial">0.87</font></td>
+<td><font face="Arial">0.91</font></td>
+<td><font face="Arial">0.93</font></td>
+<td><font face="Arial">0.95</font></td>
+<td><font face="Arial">0.97</font></td>
+<td><font face="Arial">0.98</font></td>
+<td><font face="Arial">0.99</font></td>
+</tr>
+<tr>
+<td><font face="Arial"><b>1.5</b></font></td>
+<td><font face="Arial">0.6</font></td>
+<td style="background:#C0C0C0"><font face="Arial">0.75</font></td>
+<td><font face="Arial">0.89</font></td>
+<td><font face="Arial">1.03</font></td>
+<td><font face="Arial">1.14</font></td>
+<td><font face="Arial">1.22</font></td>
+<td><font face="Arial">1.30</font></td>
+<td><font face="Arial">1.36</font></td>
+<td><font face="Arial">1.40</font></td>
+<td><font face="Arial">1.43</font></td>
+<td><font face="Arial">1.45</font></td>
+<td><font face="Arial">1.46</font></td>
+</tr>
+<tr>
+<td><font face="Arial"><b>2.2</b></font></td>
+<td><font face="Arial">0.69</font></td>
+<td><font face="Arial">0.89</font></td>
+<td style="background:#C0C0C0"><font face="Arial">1.1</font></td>
+<td><font face="Arial">1.32</font></td>
+<td><font face="Arial">1.50</font></td>
+<td><font face="Arial">1.66</font></td>
+<td><font face="Arial">1.82</font></td>
+<td><font face="Arial">1.92</font></td>
+<td><font face="Arial">2.0</font></td>
+<td><font face="Arial">2.06</font></td>
+<td><font face="Arial">2.10</font></td>
+<td><font face="Arial">2.13</font></td>
+</tr>
+<tr>
+<td><font face="Arial"><b>3.3</b></font></td>
+<td><font face="Arial">0.77</font></td>
+<td><font face="Arial">1.03</font></td>
+<td><font face="Arial">1.32</font></td>
+<td style="background:#C0C0C0"><font face="Arial">1.65</font></td>
+<td><font face="Arial">1.94</font></td>
+<td><font face="Arial">2.22</font></td>
+<td><font face="Arial">2.48</font></td>
+<td><font face="Arial">2.70</font></td>
+<td><font face="Arial">2.87</font></td>
+<td><font face="Arial">3.00</font></td>
+<td><font face="Arial">3.08</font></td>
+<td><font face="Arial">3.14</font></td>
+</tr>
+<tr>
+<td><font face="Arial"><b>4.7</b></font></td>
+<td><font face="Arial">0.83</font></td>
+<td><font face="Arial">1.14</font></td>
+<td><font face="Arial">1.50</font></td>
+<td><font face="Arial">1.94</font></td>
+<td style="background:#C0C0C0"><font face="Arial">2.35</font></td>
+<td><font face="Arial">2.78</font></td>
+<td><font face="Arial">3.20</font></td>
+<td><font face="Arial">3.58</font></td>
+<td><font face="Arial">3.87</font></td>
+<td><font face="Arial">4.12</font></td>
+<td><font face="Arial">4.27</font></td>
+<td><font face="Arial">4.39</font></td>
+</tr>
+<tr>
+<td><font face="Arial"><b>6.8</b></font></td>
+<td><font face="Arial">0.87</font></td>
+<td><font face="Arial">1.22</font></td>
+<td><font face="Arial">1.66</font></td>
+<td><font face="Arial">2.22</font></td>
+<td><font face="Arial">2.78</font></td>
+<td style="background:#C0C0C0"><font face="Arial">3.40</font></td>
+<td><font face="Arial">4.05</font></td>
+<td><font face="Arial">4.68</font></td>
+<td><font face="Arial">5.19</font></td>
+<td><font face="Arial">5.64</font></td>
+<td><font face="Arial">5.94</font></td>
+<td><font face="Arial">6.18</font></td>
+</tr>
+<tr>
+<td><font face="Arial"><b>10</b></font></td>
+<td><font face="Arial">0.91</font></td>
+<td><font face="Arial">1.30</font></td>
+<td><font face="Arial">1.82</font></td>
+<td><font face="Arial">2.48</font></td>
+<td><font face="Arial">3.20</font></td>
+<td><font face="Arial">4.05</font></td>
+<td style="background:#C0C0C0"><font face="Arial">5.0</font></td>
+<td><font face="Arial">6.0</font></td>
+<td><font face="Arial">6.9</font></td>
+<td><font face="Arial">7.7</font></td>
+<td><font face="Arial">8.3</font></td>
+<td><font face="Arial">8.7</font></td>
+</tr>
+<tr>
+<td><font face="Arial"><b>15</b></font></td>
+<td><font face="Arial">0.93</font></td>
+<td><font face="Arial">1.36</font></td>
+<td><font face="Arial">1.92</font></td>
+<td><font face="Arial">2.70</font></td>
+<td><font face="Arial">3.58</font></td>
+<td><font face="Arial">4.68</font></td>
+<td><font face="Arial">6.0</font></td>
+<td style="background:#C0C0C0"><font face="Arial">7.50</font></td>
+<td><font face="Arial">8.9</font></td>
+<td><font face="Arial">10.3</font></td>
+<td><font face="Arial">11.4</font></td>
+<td><font face="Arial">12.2</font></td>
+</tr>
+<tr>
+<td><font face="Arial"><b>22</b></font></td>
+<td><font face="Arial">0.95</font></td>
+<td><font face="Arial">1.40</font></td>
+<td><font face="Arial">2.00</font></td>
+<td><font face="Arial">2.87</font></td>
+<td><font face="Arial">3.87</font></td>
+<td><font face="Arial">5.19</font></td>
+<td><font face="Arial">6.9</font></td>
+<td><font face="Arial">8.9</font></td>
+<td style="background:#C0C0C0"><font face="Arial">11.0</font></td>
+<td><font face="Arial">13.2</font></td>
+<td><font face="Arial">15.0</font></td>
+<td><font face="Arial">16.6</font></td>
+</tr>
+<tr>
+<td><font face="Arial"><b>33</b></font></td>
+<td><font face="Arial">0.97</font></td>
+<td><font face="Arial">1.43</font></td>
+<td><font face="Arial">2.06</font></td>
+<td><font face="Arial">3.0</font></td>
+<td><font face="Arial">4.12</font></td>
+<td><font face="Arial">5.64</font></td>
+<td><font face="Arial">7.7</font></td>
+<td><font face="Arial">10.3</font></td>
+<td><font face="Arial">13.2</font></td>
+<td style="background:#C0C0C0"><font face="Arial">16.5</font></td>
+<td><font face="Arial">19.4</font></td>
+<td><font face="Arial">22.2</font></td>
+</tr>
+<tr>
+<td><font face="Arial"><b>47</b></font></td>
+<td><font face="Arial">0.98</font></td>
+<td><font face="Arial">1.45</font></td>
+<td><font face="Arial">2.1</font></td>
+<td><font face="Arial">3.08</font></td>
+<td><font face="Arial">4.27</font></td>
+<td><font face="Arial">5.94</font></td>
+<td><font face="Arial">8.3</font></td>
+<td><font face="Arial">11.4</font></td>
+<td><font face="Arial">15,0</font></td>
+<td><font face="Arial">19.4</font></td>
+<td style="background:#C0C0C0"><font face="Arial">23.5</font></td>
+<td><font face="Arial">27.8</font></td>
+</tr>
+<tr>
+<td><font face="Arial"><b>68</b></font></td>
+<td><font face="Arial">0.99</font></td>
+<td><font face="Arial">1.46</font></td>
+<td><font face="Arial">2.13</font></td>
+<td><font face="Arial">3.14</font></td>
+<td><font face="Arial">4.39</font></td>
+<td><font face="Arial">6.18</font></td>
+<td><font face="Arial">8.7</font></td>
+<td><font face="Arial">12.2</font></td>
+<td><font face="Arial">16.6</font></td>
+<td><font face="Arial">22.2</font></td>
+<td><font face="Arial">27.8</font></td>
+<td style="background:#C0C0C0"><font face="Arial">34.0</font></td>
+</tr>
+</table>
+<br>
+<p align="center"><font face="Arial"><b>يلاحظ:</b> يمكن لهذه الآلة الحاسبة أيضًا حل مسائل رياضية أخرى. حساب المقاومات بالتوازي<br>
+بالضبط نفس الحسابات المطلوبة للمحثات على التوازي أو للمكثفات المتسلسلة. </font></p>
+<table border="0" align="center" cellpadding="0" cellspacing="0" style="background:#FFFFFF">
+<tr>
+<td><font size="4" face="Arial">تبدد الطاقة في المقاوم: </font><font size="4" face="Times"><i>P</i></font><font size="4" face="Arial"> = </font><font size="4" face="Times"><i>V</i></font><font size="4" face="Arial"> &times; </font><font size="4" face="Times"><i>I</i></font><font size="4" face="Arial">, </font><font size="4"face="Times"><i>P</i></font><font size="4" face="Arial"> = </font><font size="4"face="Times"><i>V</i></font><font size="4" face="Arial"><sup>2</sup> / </font><font size="4" face="Times"><i>R</i></font><font size="4" face="Arial">, </font><font size="4" face="Times"><i>P</i></font><font size="4" face="Arial"> = </font><font size="4" face="Times"><i>I</i></font><font size="4" face="Arial"><sup>2</sup> &times; </font><font size="4" face="Times"><i>R</i>.</font></td>
+</tr>
+</table>
+<font size="1">&#160;</font><br>
+<table border="0" align="center" cellpadding="0" cellspacing="0" style="background:#FFFFFF">
+<tr>
+<td><font size="4" face="Arial"><b>يلاحظ:</b> بالنسبة للمقاومات المتسلسلة ، يكون التيار هو نفسه لكل مقاوم ، <b></b> <br>
+وللمقاومات بالتوازي ، فإن<b>الفولطية</b> هو نفسه لكل المقاوم.</font></td>
+</tr>
+</table>
+<font size="1">&#160;</font><br>
+<table border="0" align="center" cellpadding="0" cellspacing="0" style="background:#FFFFFF">
+<tr>
+<td>&nbsp;</td>
+</tr>
+</table>
+<font size="1">&#160;</font><br>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try{var pageTracker = _gat._getTracker("UA-4675209-1");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+<g:plusone annotation="inline"></g:plusone>
+<script type="text/javascript">
+(function() {
+var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+po.src = 'https://apis.google.com/js/plusone.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+})();
+</script>
+
+</body>
+</html>
